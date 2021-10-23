@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce -Contacto</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@300;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+
+<body>
+    <header class="nombre-sitio">
+        <h1>Tienda <span>Muebles</span></h1>
+    </header>
+
+    <div class="container-nav">
+        <nav class="nav-principal contenedor">
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="tienda.html">Tienda</a>
+            <a href="blog.html">Blog</a>
+            <a href="galeria.html">Galería</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </div>
+
+    <main class="contenido-principal contenedor">
+        <h2 class="text-center">Contacto</h2>
+        <form class="formulario">
+            <fieldset>
+                <legend>Tus Datos</legend>
+                <div class="campo">
+                    <label for="nombre">Nombre: </label>
+                    <input class="input" id="nombre" type="text" placeholder="Coloca tu Nombre" required/>
+                </div>
+                <div class="campo">
+                    <label for="asunto">Asunto:</label>
+                    <input id="asunto" type="text" placeholder="Tu Asunto">
+                </div>
+                <div class="campo">
+                    <label for="email">E-mail:</label>
+                    <input id="email" type="email" placeholder="Escribe tu email">
+                </div>
+                <div class="campo">
+                    <label for="tel">Teléfono</label>
+                    <input id="tel" type="tel" placeholder="Escribe tu tlf">
+                </div>
+                <div class="campo">
+                    <label for="date">Fecha:</label>
+                    <input id="date" type="date" placeholder="Fecha de Nacimiento">
+                </div>
+                <div class="campo">
+                    <label for="msj">Mensaje:</label>
+                    <textarea id="msj" rows="10" cols="20" placeholder="Escribe tu texto aquí"></textarea>
+                </div>
+            </fieldset>
+   
+
+        <fieldset>
+            <legend>País</legend>
+            <div class="campo">
+                <label for="pais">País:</label>
+                <select id="pais">
+                    <option disabled>----Seleccione---</option>
+                    <option value="MX" >México</option>
+                    <option value="AR">Argentina</option>
+                    <option value="CL">Chile</option>
+                    <option value="CO">Colombia</option>
+                </select>
+            </div>
+        </fieldset>
+<fieldset>
+    <legend>Información extra</legend>
+    <div class="campo">
+        <label for="cliente">Cliente</label>
+        <input id="cliente" type="radio" name="tipo" value="cliente"> 
+    </div>
+    <!--name="tipo" es porque debes agregarle una sintaxis extra para que solo se pueda seleccionar uno de los dos-->
+    <div class="campo">
+        <label for="proveedor">Proveedor</label>
+        <input id="proveedor" type="radio" name="tipo" value="proveedor"> 
+    <!---value es para enviar informacion al servidor -->
+    </div>
+
+    <div class="campo">
+        <label for="categoria">Categoria de Interés</label>
+        <input list="categorias" name="categorias">
+        <datalist id="categorias">
+            <option value="Cocina"></option>
+            <option value="Exterior"></option>
+            <option value="Recamaras"></option>
+            <option value="Oficina"></option>
+            <option value="Televisión"></option>
+        </datalist>
+        <!--datalist se usa para categorias donde puedes escribir las primeras letras y luego encontrar más fácil la opcion al contario de select-->
+    </div>
+</fieldset>
+<input class="btn" type="submit" value="Enviar Formulario">       
+
+</form>
+    </main>
+
+
+    </section>
+
+    <footer class="site-footer">
+        <div class="grid-footer contenedor">
+            <div>
+                <h3>Categorías</h3>
+                <nav class="footer-menu">
+                    <a href="#">Cocina</a>
+                    <a href="#">Oficinas</a>
+                    <a href="#">Jardín</a>
+                    <a href="#">Cochera</a>
+                    <a href="#">Dormitorios</a>
+                </nav>
+            </div>
+            <div>
+                <h3>Sobre Nosotros</h3>
+                <nav class="footer-menu">
+                    <a href="#">Nuestra Historia</a>
+                    <a href="#">Misión, Visión y Valores</a>
+                    <a href="#">Carreras</a>
+                    <a href="#">Política de Privacidad</a>
+                    <a href="#">Servicios</a>
+                </nav>
+            </div>
+            <div>
+                <h3>Soporte</h3>
+                <nav class="footer-menu">
+                    <a href="#">Preguntas Frecuentes</a>
+                    <a href="#">Ayuda en Línea</a>
+                    <a href="#">Confianza y Seguridad</a>
+                </nav>
+            </div>
+        </div>
+        <p class="copyright">Todos los derechos Reservados, Tienda Muebles&copy;</p>
+    </footer>
+
+
+</body>
+
+</html>
